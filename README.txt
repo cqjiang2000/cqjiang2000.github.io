@@ -1,1 +1,1 @@
-This is yhe profile of Chaoquan Jiang
+This is the profile of Chaoquan Jiang

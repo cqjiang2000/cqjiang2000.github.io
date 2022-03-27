@@ -1,57 +1,157 @@
-<!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Homepage of ChaoQuan</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Homepage of ChaoQuan</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
 
-				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-							<h1>Chaoquan Jiang</h1>
-							<p class="major">22,Senior student majoring in Mathematics in Science school of Beijing Jiaotong University(BJTU) 
-								guided by Prof.<a href="https://dblp.uni-trier.de/pid/84/286.html">Jitao Sang</a>, majoring in Mathematics and Applied Mathematics
-								 and working in <a href="https://adam-bjtu.org/">ADaM AI Lab </a> BJTU.Submitting articals to <a href="https://ijcai-22.org/">IJCAI</a>
-								  2022, arxiv pre-print.etc</p>
-							<ul class="actions stacked">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
-							</ul>
-						</div>
-						<!-- <div class="image">
-							<img src="images/headshot.jpg" alt="" />
-						</div> -->
-					</section>
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
 
-				<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>Generalization of DNNs on Out-Of-Distribution(OOD) Data</h2>
-							<p>Deep network models perform excellently on In-Distribution (ID) data, but can significantly fail on Out-Of-Distribution (OOD) data. While developing methods focus on improving OOD generalization, few attention has been paid to evaluating the capability of models to handle OOD data. This study is devoted to analyzing the problem of experimental ID test and designing OOD test paradigm to accurately evaluate the practical performance. Our analysis is based on an introduced categorization of three types of distribution shifts to generate OOD data. Main observations include: (1) ID test fails in neither reflecting the actual performance of a single model nor comparing between different models under OOD data. (2) The ID test failure can be ascribed to the learned marginal and conditional spurious correlations resulted from the corresponding distribution shifts. Based on this, we propose novel OOD test paradigms to evaluate the generalization capacity of models to unseen data, and discuss how to use OOD test results to find bugs of models to guide model debugging.</p>
-							<ul class="actions stacked">
-								<li><a href="https://arxiv.org/abs/2111.09190" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/ood-test1.jpg" alt=""/>
-						</div>
-					</section>
+        <!-- Google Fonts -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet"> -->
 
-				<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Contrastive Learning for Eliminating Spurious Correlations</h2>
-							<p>Bias datasets cause models to learn spurious correlations.Compared with constructing new counterfactual samples, we consider that making full use of the samples in the dataset can also eliminate spurious correlation. Through analytical experiments, we find that the counterexamples in the dataset can play an important role in avoiding model utilizing
+        <!-- Font Awesome -->
+        <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"> -->
+        <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
+                    <img class="mx-auto d-block w-75 bg-primary img-fluid rounded-circle mb-4 p-3" src="img/profile.jpg" alt="Image">
+                    <h1 class="font-weight-bold">ChaoQuan</h1>
+                    <p class="mb-4">
+                        Hello, I'm Chaoquan Jiang, 22, a Senior student majoring in Mathematics in Science school of Beijing Jiaotong University(BJTU). 
+                        I'm working on deep learning, AI algorithm testing and debuging, NLP ,etc.
+                        <!-- I'm a coding lover and studying CS in BJTU. -->
+                    </p>
+                    <div class="d-flex justify-content-center mb-5">
+                        <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-primary mr-2" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+
+                    <!-- <a href="publications/CV.pdf" class="btn btn-lg btn-block btn-primary mt-auto">CV</a> -->
+                </div>
+
+                <div class="sidebar-icon d-flex flex-column h-100 justify-content-center text-right">
+                    <i class="fas fa-2x fa-angle-double-right text-primary"></i>
+                </div>
+            </div>
+            <div class="content">
+                <!-- Navbar Start -->
+                <div class="container p-0">
+                    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+                        <!-- <a href="" class="navbar-brand d-block d-lg-none">Navigation</a> -->
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav m-auto">
+                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="about.html" target="_blank" class="nav-item nav-link"> About</a>
+                                <a href="publications/CV.pdf" target="_blank" class="nav-item nav-link">CV</a>
+                                <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+
+                                <!-- <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                    <div class="dropdown-menu">
+                                        <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                                        <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <!-- Navbar End -->
+                
+                <!-- Carousel Start -->
+                <div class="container p-0">
+                    <div id="blog-carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- <div class="carousel-item active">
+                                <img class="w-100" src="img/carousel-1.jpg" alt="Image"> -->
+                                <!-- <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                    <h2 class="mb-3 text-white font-weight-bold">Lorem ipsum dolor sit amet</h2>
+                                    <div class="d-flex text-white">
+                                        <small class="mr-2"><i class="fa fa-calendar-alt"></i> 01-Jan-2045</small>
+                                        <small class="mr-2"><i class="fa fa-folder"></i> Web Design</small>
+                                        <small class="mr-2"><i class="fa fa-comments"></i> 15 Comments</small>
+                                    </div>
+                                    <a href="" class="btn btn-lg btn-outline-light mt-4">Read More</a>
+                                </div> -->
+                            <!-- </div> -->
+                            <div class="carousel-item active">
+                                <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                    <h2 class="text-white font-weight-bold">Welcom to my study blog!</h2>
+                                    <div class="d-flex">
+                                        <small class="mr-2"><i class="fa fa-calendar-alt"></i> 01-Jan-2022</small>
+                                        <small class="mr-2"><i class="fa fa-folder"></i> Deep Learning</small>
+                                        <small class="mr-2"><i class="fa fa-comments"></i>Optimizition</small>
+                                    </div>
+                                    <a href="#" class="btn btn-lg btn-outline-light mt-4">Read More</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="w-100" src="img/carousel-3.jpg" alt="Image">
+                                <!-- <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                    <h2 class="text-white font-weight-bold">Welcom to my study blog!</h2>
+                                    <div class="d-flex">
+                                        <small class="mr-2"><i class="fa fa-calendar-alt"></i> 01-Jan-2022</small>
+                                        <small class="mr-2"><i class="fa fa-folder"></i> Deep Learning</small>
+                                        <small class="mr-2"><i class="fa fa-comments"></i>Optimizition</small>
+                                    </div>
+                                    <a href="" class="btn btn-lg btn-outline-light mt-4">Read More</a>
+                                </div> -->
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#blog-carousel" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#blog-carousel" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Carousel End -->
+                
+                
+                <!-- Blog List Start -->
+                <div class="container bg-white pt-5">
+                    <div class="row blog-item px-3 pb-5">
+                        <div class="col-md-5">
+                            <img class="img-fluid mb-4 mb-md-0" src="img/CE-CL1.jpg" alt="Image">
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="mt-md-4 px-md-3 mb-2 py-2 bg-white font-weight-bold">CeCon for Eliminating Spurious Correlations</h3>
+                            <div class="d-flex mb-3">
+                                <small class="mr-2 text-muted"><i class="fa fa-calendar-alt"></i> 01-Mar-2022</small>
+                                <small class="mr-2 text-muted"><i class="fa fa-folder"></i> Contrastive Learning</small>
+                                <small class="mr-2 text-muted"><i class="fa fa-comments"></i>Shortcut</small>
+                            </div>
+                            <p>
+                                Bias datasets cause models to learn spurious correlations.
+                                Compared with constructing new counterfactual samples, 
+                                we consider that making full use of the samples in the 
+                                dataset can also eliminate spurious correlation.
+                                <details>
+                                    <summary>Learning More...</summary>
+                                Bias datasets cause models to learn spurious correlations.
+                                Compared with constructing new counterfactual samples, 
+                                we consider that making full use of the samples in the 
+                                dataset can also eliminate spurious correlation. 
+                                Through analytical experiments, we find that the counterexamples in
+                                 the dataset can play an important role in avoiding model utilizing
 								spurious correlation. Inspired by the above conclusion,
 								we propose counterexample contrastive (Ce-
 								Con) loss which treats counterexamples as negatives
@@ -62,21 +162,65 @@
 								so as to eliminate the spurious correlation caused
 								by bias. Experimental results show that our proposed
 								method can achieve state-of-the-art results
-								when the bias features are known.</p>
-							<ul class="actions stacked">
-								<li><a href="publications/IJCAI__22.pdf" class="button">Learn More(Submitted to IJCAI)</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/CE-CL1.jpg" alt="" />
-						</div>
-					</section>
-
-				<!-- Four -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Theoretical model and experimental analysis of soap film filter</h2>
-							<p>As for the soap film filter which is widely used today, 
+								when the bias features are known.
+                                </details>
+                            </p>
+                            <a class="btn btn-link p-0" href="#">Working...<i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="row blog-item px-3 pb-5">
+                        <div class="col-md-5">
+                            <img class="img-fluid mb-4 mb-md-0" src="img/ood-test1.jpg" alt="Image">
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="mt-md-4 px-md-3 mb-2 py-2 bg-white font-weight-bold" ><a href="https://arxiv.org/abs/2111.09190" target="_blank">Generalization of DNNs on Out-Of-Distribution(OOD)</a></h3>
+                            <div class="d-flex mb-3">
+                                <small class="mr-2 text-muted"><i class="fa fa-calendar-alt"></i> 01-Sep-2021</small>
+                                <small class="mr-2 text-muted"><i class="fa fa-folder"></i> OOD test</small>
+                                <small class="mr-2 text-muted"><i class="fa fa-comments"></i>Generalization</small>
+                            </div>
+                            <p>
+                                <details>
+                                    <summary>Learning More...</summary>
+                            Deep network models perform excellently on In-Distribution (ID) data, 
+                            but can significantly fail on Out-Of-Distribution (OOD) data. While developing 
+                            methods focus on improving OOD generalization, few attention has been paid to 
+                            evaluating the capability of models to handle OOD data. This study is devoted to
+                             analyzing the problem of experimental ID test and designing OOD test paradigm to
+                              accurately evaluate the practical performance. Our analysis is based on an 
+                              introduced categorization of three types of distribution shifts to generate OOD 
+                              data. Main observations include: (1) ID test fails in neither reflecting the actual
+                               performance of a single model nor comparing between different models under OOD 
+                               data. (2) The ID test failure can be ascribed to the learned marginal and 
+                               conditional spurious correlations resulted from the corresponding distribution
+                                shifts. Based on this, we propose novel OOD test paradigms to evaluate the 
+                                generalization capacity of models to unseen data, and discuss how to use OOD 
+                                test results to find bugs of models to guide model debugging.
+                                </details>
+                                
+                            </p>
+                            <!-- <a class="btn btn-link p-0" href="">Read More <i class="fa fa-angle-right"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="row blog-item px-3 pb-5">
+                        <div class="col-md-5">
+                            <img class="img-fluid mb-4 mb-md-0" src="img/soap.jpg" alt="Image">
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="mt-md-4 px-md-3 mb-2 py-2 bg-white font-weight-bold">
+                                <a href="publications/皂膜过滤器理论模型建立与实验分析.pdf" target="_blank">
+                                 model and experimental analysis of soap film filter
+                                </a>
+                            </h3>
+                            <div class="d-flex mb-3">
+                                <small class="mr-2 text-muted"><i class="fa fa-calendar-alt"></i> 01-Jan-2020</small>
+                                <small class="mr-2 text-muted"><i class="fa fa-folder"></i> Web Design</small>
+                                <small class="mr-2 text-muted"><i class="fa fa-comments"></i> 15 Comments</small>
+                            </div>
+                            <p>
+                                <details>
+                                    <summary>Learning More...</summary>
+                                As for the soap film filter which is widely used today, 
 								there is no corresponding quantitative analysis research
 								, which leads to the coarse model used 
 								 in some theoretical studies, and the conclusions obtained are
@@ -87,326 +231,138 @@
 								    with the theory, which is of certain significance to the 
 									analysis of practical problems and provides a certain theoretical 
 									basis for the subsequent study of more complex problems and more 
-									accurate analysis.   </p>
-							<ul class="actions stacked">
-								<li><a href="publications/皂膜过滤器理论模型建立与实验分析.pdf" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/soap.jpg" alt="" />
-						</div>
-					</section>
-				
+									accurate analysis. 
+                                </details>
+                            </p>
+                            <!-- <a class="btn btn-link p-0" href="">Read More <i class="fa fa-angle-right"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="container bg-white pt-5">
+                        <div class="row blog-item px-3 pb-5">
+                            <div class="col-md-5">
+                                <img class="img-fluid mb-4 mb-md-0" src="img/PTE.jpg" alt="Image">
+                            </div>
+                            <div class="col-md-7">
+                                <h3 class="mt-md-4 px-md-3 mb-2 py-2 bg-white font-weight-bold">
+                                    <a href="publications/转移置换熵_论文.pdf" target="_blank">
+                                        Permutation Transition Entropy: A new method of measuring the dynamical complexity
+                                of non-stationary time series
+                                    </a>
+                                </h3>
+                                <div class="d-flex mb-3">
+                                    <small class="mr-2 text-muted"><i class="fa fa-calendar-alt"></i> 01-Jan-19</small>
+                                    <small class="mr-2 text-muted"><i class="fa fa-folder"></i>Entropy </small>
+                                    <small class="mr-2 text-muted"><i class="fa fa-comments"></i> Time series</small>
+                                </div>
+                                <p>
+                                    <details>
+                                        <summary>Learning More...</summary>
+                                    In this paper, we apply the method of Permutation Transition Entropy, which quantifies the
+                                Markov states transition between adjacent permutations, to measure the dynamical complexity
+                                of non-stationary time series. This method can capture the change of states trajectory of the
+                                underlying system by quantifying the Markov states transition between adjacent permutations.
+                                Unlike many traditional methods which usually measure the static complexity, the new
+                                method of permutation transition entropy(PTE) is able to identify the dynamical complexity
+                                with respect to the temporal structure change of the time series. By numerical analyses, we
+                                show that the PTE can give new information while other methods, like the permutation
+                                entropy (PE), cannot. We apply the PTE method to the financial time series, and find the
+                                existence of the momentum effect in the daily closing price and the daily trading volume of
+                                NASDAQ Composite Index. It indicates that the dynamical complexity of the index is lower
+                                than that of the purely random time series. The forthcoming state of the daily closing price is,
+                                therefore, a bit regular, which can be used for prediction. While the logarithm return shows
+                                very similar PTE values with those of the purely random time series, which correspond to
+                                high dynamical complexity. Furthermore, with multiscale analysis towards PTE, it turns out
+                                that under the same embedding dimension, the series with higher time-scale are more
+                                deterministic and represents more obvious momentum effect.
+                                    </details>
+                                </p>
+                                 <!-- <a class="btn btn-link p-0" href="">Read More <i class="fa fa-angle-right"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container bg-white pt-5">
+                        <div class="row blog-item px-3 pb-5">
+                            <div class="col-md-5">
+                                <a href="https://clustrmaps.com/site/1bnjp" title="Visit tracker">
+                                    <img src="https://www.clustrmaps.com/map_v2.png?d=V2TRAJUBlWmG2RKwtTvmXzOUMPvE6W4JnsOPE1NIlbw&cl=ffffff" alt="Image">
+                                </a>                        
+                            </div>
+                            <div class="col-md-7">
+                                <h3 class="mt-md-4 px-md-3 mb-2 py-2 bg-white font-weight-bold">Visitor statistics</h3>
+                    
+                                <!-- <a class="btn btn-link p-0" href="">Read More <i class="fa fa-angle-right"></i></a> -->
+                            </div>
+                        </div>
+    
+                    </div>
+                
+                <!-- Blog List End -->
+                
+                
+                <!-- Subscribe Start -->
+                <!-- <div class="container py-5 px-4 bg-secondary text-center">
+                    <h1 class="text-white font-weight-bold">Subscribe My Newsletter</h1>
+                    <p class="text-white">Subscribe and get my latest article in your inbox</p>
+                    <form class="form-inline justify-content-center">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Your Email">
+                            <div class="input-group-append">
+                              <button class="btn btn-primary" type="submit">Subscribe</button>
+                            </div>
+                          </div>
+                    </form>
+                </div> -->
+                <!-- Subscribe End -->
+                
+                
+                <!-- Blog List Start -->
+                
+                    <!-- <div class="row blog-item px-3 pb-5">
+                        <div class="col-md-5">
+                            <img class="img-fluid mb-4 mb-md-0" src="img/blog-5.jpg" alt="Image">
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="mt-md-4 px-md-3 mb-2 py-2 bg-white font-weight-bold">Lorem ipsum dolor sit amet</h3>
+                            <div class="d-flex mb-3">
+                                <small class="mr-2 text-muted"><i class="fa fa-calendar-alt"></i> 01-Jan-2045</small>
+                                <small class="mr-2 text-muted"><i class="fa fa-folder"></i> Web Design</small>
+                                <small class="mr-2 text-muted"><i class="fa fa-comments"></i> 15 Comments</small>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu suscipit orci velit id libero
+                            </p>
+                            <a class="btn btn-link p-0" href="">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                     
+                </div>-->
+                <!-- Blog List End -->
+                
+                
+                <!-- Footer Start -->
+                <div class="container py-4 bg-secondary text-center">
+                    <p class="m-0 text-white">
+                        &copy; <a class="text-white font-weight-bold" href="#">https://cqjiang2000@github.io</a>. 
+                    </p>
+                </div>
+                <!-- Footer End -->
+            </div>
+        </div>
+        
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-				<!-- five -->
-				<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-					<div class="content">
-						<h2>Permutation Transition Entropy: A new method of measuring the dynamical complexity
-							of non-stationary time series</h2>
-						<p>In this paper, we apply the method of Permutation Transition Entropy, which quantifies the
-							Markov states transition between adjacent permutations, to measure the dynamical complexity
-							of non-stationary time series. This method can capture the change of states trajectory of the
-							underlying system by quantifying the Markov states transition between adjacent permutations.
-							Unlike many traditional methods which usually measure the static complexity, the new
-							method of permutation transition entropy(PTE) is able to identify the dynamical complexity
-							with respect to the temporal structure change of the time series. By numerical analyses, we
-							show that the PTE can give new information while other methods, like the permutation
-							entropy (PE), cannot. We apply the PTE method to the financial time series, and find the
-							existence of the momentum effect in the daily closing price and the daily trading volume of
-							NASDAQ Composite Index. It indicates that the dynamical complexity of the index is lower
-							than that of the purely random time series. The forthcoming state of the daily closing price is,
-							therefore, a bit regular, which can be used for prediction. While the logarithm return shows
-							very similar PTE values with those of the purely random time series, which correspond to
-							high dynamical complexity. Furthermore, with multiscale analysis towards PTE, it turns out
-							that under the same embedding dimension, the series with higher time-scale are more
-							deterministic and represents more obvious momentum effect.</p>
-						<ul class="actions stacked">
-							<li><a href="publications/转移置换熵_论文.pdf" class="button">Learn More(Submitted to IJCAI)</a></li>
-						</ul>
-					</div>
-					<div class="image">
-						<img src="images/PTE.jpg" alt=""  width="100" height="150"/>
-					</div>
-				</section>
-				<!-- Six -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Massa sed condimentum</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-						</div>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
 
-						<!-- Gallery -->
-							<div class="gallery style2 medium lightbox onscroll-fade-in">
-								<article>
-									<a href="publications/Based on Diversification Measure_ Application in  Portfolio Strategy of Chinese Biopharmaceutical Industry.pdf" class="button">
-										<img src="images/gallery/thumbs/01.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="https://clustrmaps.com/site/1bnjp" title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=V2TRAJUBlWmG2RKwtTvmXzOUMPvE6W4JnsOPE1NIlbw&cl=ffffff"></a>
-									<!-- <a href="images/gallery/fulls/02.jpg" class="image">
-										<img src="images/gallery/thumbs/02.jpg" alt="" />
-									</a> -->
-									<div class="caption">
-										<h3>Feugiat Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/03.jpg" class="image">
-										<img src="images/gallery/thumbs/03.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Amet</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/04.jpg" class="image">
-										<img src="images/gallery/thumbs/04.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/05.jpg" class="image">
-										<img src="images/gallery/thumbs/05.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ultrices Magna</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/06.jpg" class="image">
-										<img src="images/gallery/thumbs/06.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/07.jpg" class="image">
-										<img src="images/gallery/thumbs/07.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/08.jpg" class="image">
-										<img src="images/gallery/thumbs/08.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Risus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/09.jpg" class="image">
-										<img src="images/gallery/thumbs/09.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Tempus Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/10.jpg" class="image">
-										<img src="images/gallery/thumbs/10.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Etiam</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/11.jpg" class="image">
-										<img src="images/gallery/thumbs/11.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/12.jpg" class="image">
-										<img src="images/gallery/thumbs/12.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-							</div>
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
 
-					</section>
-
-				<!-- Six -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Ipsum sed consequat</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-							<div class="items style1 medium onscroll-fade-in">
-								<section>
-									<span class="icon style2 major fa-gem"></span>
-									<h3>Lorem</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-save"></span>
-									<h3>Ipsum</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>Dolor</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-wifi"></span>
-									<h3>Amet</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-cog"></span>
-									<h3>Magna</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-paper-plane"></span>
-									<h3>Tempus</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-desktop"></span>
-									<h3>Aliquam</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-sync-alt"></span>
-									<h3>Elit</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-hashtag"></span>
-									<h3>Morbi</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-bolt"></span>
-									<h3>Turpis</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-envelope"></span>
-									<h3>Ultrices</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-leaf"></span>
-									<h3>Risus</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-							</div>
-						</div>
-					</section>
-
-				<!-- Seven -->
-					<section class="wrapper style1 align-center">
-						<div class="inner medium">
-							<h2>Get in touch</h2>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" value="" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" value="" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6"></textarea>
-									</div>
-								</div>
-								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-
-						</div>
-					</section>
-
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-						</div>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
 </html>
